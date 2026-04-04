@@ -116,7 +116,7 @@ OPENAI_API_KEY=your_api_key_here
 
 ## Usage
 
-### Step 1: Add Documents
+###  Add Documents
 
 Place your documents inside:
 
@@ -130,7 +130,7 @@ Supported format:
 
 ---
 
-### Step 2: Create Vector Database
+### Create Vector Database
 
 ```bash
 python create_database.py
@@ -145,7 +145,7 @@ This will:
 
 ---
 
-### Step 3: Query Your Data
+### Query Your Data
 
 ```bash
 python query_data.py "Your question here"

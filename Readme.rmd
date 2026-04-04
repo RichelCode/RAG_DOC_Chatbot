@@ -1,4 +1,4 @@
-# RAG Doc Chatbot
+## RAG Doc Chatbot
 
 A simple Retrieval-Augmented Generation (RAG) project built with Python, LangChain, OpenAI, and ChromaDB.
 

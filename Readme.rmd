@@ -1,0 +1,11 @@
+# RAG Doc Chatbot
+
+A simple Retrieval-Augmented Generation (RAG) project built with Python, LangChain, OpenAI, and ChromaDB.
+
+## Goal
+Chat with custom documents by:
+- loading documents
+- splitting them into chunks
+- embedding them
+- storing them in Chroma
+- retrieving relevant chunks for questions

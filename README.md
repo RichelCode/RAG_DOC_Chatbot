@@ -209,6 +209,28 @@ OpenAI embeddings provide a strong semantic representation for:
 * API integration and environment management
 * Modular and scalable code organization
 
+## Limitations and What I Would Improve
+
+This is a working first version, and there are clear things I would
+change with more time:
+
+- **No evaluation harness yet.** Right now I judge answer quality by
+  reading outputs. The next step is to add measurable retrieval and
+  generation metrics (for example faithfulness, answer relevancy, and
+  hit rate) and track a hallucination rate, so quality is measured
+  rather than eyeballed.
+- **Single-stage retrieval.** Retrieval relies on similarity search
+  alone. Adding a re-ranking step would push the most relevant chunks
+  to the top before generation and improve answer grounding.
+- **Limited file support.** Ingestion currently handles Markdown.
+  Extending it to PDFs and other formats would make it useful on more
+  realistic document sets.
+- **No interface.** It runs from the command line. A simple web UI
+  would make it usable by non-technical people, which is the point of
+  a tool like this.
+- **Fixed chunking.** Chunk size and overlap are set manually. I would
+  test these systematically rather than choosing by intuition.
+
 ---
 
 ## Conclusion
